@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affortable and proffesional web design" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AdoptPet | Home-Welcome</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+    <header>
+        <div class="container text-white">
+            <div id="branding">
+                <h1><span class="highlight">Adopt</span>Pet</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="dropdown">
+                        <a class="dropdownbtn">
+                            <i class="fa fa-user-o user-icon" aria-hidden="true"></i>
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content br-3">
+                            <a href="about.html">Sign Up</a>
+                            <a href="services.html">Get a Quote</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+           <div class="container text-white text-center">
+                <div id="slide-slide">
+                    <a href="#" class="button_weiter" onclick="forward()"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <a href="#" class="button_zurueck" onclick="backward()"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                    <ul>
+                        <li id="slide1" style="width: 100%;"><img src="assets/images/slide1.jpg"></li>
+                        <li id="slide2" style="width: 100%;"><img src="assets/images/slide2.jpg"></li>
+                        <li id="slide3" style="width: 100%;"><img src="assets/images/slide3.jpg"></li>
+                        <li id="slide4" style="width: 100%;"><img src="assets/images/slide4.jpg"></li>
+                    </ul>
+                    <div class="text">
+                        <h1>Where Pets Find Their Familys.</h1>
+                        <p>Adopt a pet. Hundreds of adoptable pets are waiting for people like you.</p>
+                        <a href="about.html"><button class="text-white btn-more-reg">Learn More</button></a>
+                    </div>  
+                </div>
+                    
+                <div class="slider_auto">
+                    <input type="checkbox" id="autoslide" onchange="Checkautoslide()">
+                    <label for="autoslide">Autoslide</label>
+                </div>
+           </div>
+    </section>
+    <section id="newsletter">
+            <div class="container text-white">
+               <h1 class="text-center">Subscribe To Our Newsletter</h1> 
+               <form action="">
+                    <p style="color: red; display: none; margin-bottom: -7px;" id="subemail-error">error</p>
+                   <input type="email" onkeyup="checkSubEmail()" id="sub-email" placeholder="Enter Email..." class="br-3 full-width-sm">
+                   <button type="button" class="btn-quote text-white br-3 full-width-sm" onclick="validateSubemail()"><i class="fa fa-paper-plane" aria-hidden="true"></i> Subscribe</button>
+               </form>
+            </div>
+    </section>
+
+    <section id="boxes">
+            <div class="container">
+                 <div class="box text-center full-width-sm ">
+                     <img src="assets/images/5.jpg" alt="">
+                     <h3>Cat. Betty Delly</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae voluptatum nemo</p>
+                 </div>
+                 <div class="box text-center full-width-sm">
+                     <img src="assets/images/8.jpg" alt="">
+                    <h3>Dog. Rocky Bat</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae voluptatum nemo</p>
+                </div>
+                <div class="box text-center full-width-sm">
+                    <img src="assets/images/7.jpg" alt="">
+                    <h3>Bird. Sessy Pey</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae voluptatum nemo</p>
+                </div>
+            </div>
+    </section>
+
+    <footer class="text-center text-white">
+       <marquee behavior="chroll" direction="left">
+        <p>Designed by FombangKen, copyright &copy; 2019. All Rights Reserved</p>
+       </marquee>
+    </footer>
+    <script src="js/jquery.jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

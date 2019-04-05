@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affortable and proffesional web design">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AdoptPet| About</title>
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+    <header>
+        <div class="container text-white">
+            <div id="branding">
+                <h1><span class="highlight">Adopt</span>Pet</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1 class="text-white text-center">Subscribe To Our Newsletter</h1>
+            <form action="">
+                <p style="color: red; display: none; margin-bottom: -7px;" id="subemail-error">error</p>
+                <input type="email" onkeyup="checkSubEmail()" id="sub-email" placeholder="Enter Email..." class="br-3 full-width-sm">
+                <button type="button" class="btn-quote text-white br-3 full-width-sm" onclick="validateSubemail()"><i class="fa fa-paper-plane" aria-hidden="true"></i> Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="main-about">
+        <div class="container">
+            <article id="main-col" class="full-width-sm">
+                <h1 class="main-title">Our Pets And Their Stories</h1>
+                <ul id="services">
+                    <li class="br-3">
+                        <img style="width: 25%;"  class="pull-left about-image" src="assets/images/2.jpg" alt="">
+                        <div class="pull-right about-text">
+                            <h3>Dollyna Pessy</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus. 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="br-3">
+                        <img style="width: 25%;"  class="pull-left about-image" src="assets/images/8.jpg" alt="">
+                        <div class="pull-right about-text">
+                            <h3>Retta Pelly</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus.
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus.
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="br-3">
+                        <img style="width: 25%;"  class="pull-left about-image" src="assets/images/7.jpg" alt="">
+                        <div class="pull-right about-text">
+                            <h3>Becca Doddy</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus.
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus.
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus. 
+                            </p>
+                        </div>
+                    </li>
+                    <li class="br-3">
+                        <img style="width: 25%;"  class="pull-left about-image" src="assets/images/5.jpg" alt="">
+                        <div class="pull-right about-text">
+                            <h3>Monique Dolla</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus. 
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus.
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+            <aside id="sidebar" class="full-width-sm">
+                <div class="dark br-3 text-white">
+                    <h3 class="text-center">Create an Account.</h3>
+                    <form action="" class="quote">
+                        <div class="form-block">
+                            <label class="pull-left" id="name-label">Name</label>
+                            <input class="br-3" type="text" onkeyup="checkName()" id="user-name" placeholder="Name">
+                            <p style="margin-left: 15px; margin-top: -1px; color: red; display: none;" id="error-name">error</p>
+                        </div>
+                        <div class="form-block">
+                            <label class="pull-left" id="number-label">Phone Number</label>
+                            <input class="br-3" type="number" onkeyup="checkPhonenr()" id="user-number" placeholder="Phone Nr.">
+                            <p style="margin-left: 15px; margin-top: -1px; color: red; display: none;" id="error-phonenumber">error</p>
+                        </div>
+                        <div class="form-block">
+                            <label class="pull-left" id="email-label">Email</label>
+                            <input class="br-3" type="email" onkeyup="checkEmail()" id="user-email" placeholder="Email">
+                            <p style="margin-left: 15px; margin-top: -1px; color: red; display: none;" id="error-email">error</p>
+                        </div>
+                        <div class="form-block">
+                            <label class="pull-left" id="password-label">Password</label>
+                            <input class="br-3" type="password" onkeyup="checkPassword()" id="user-password" placeholder="Password">
+                            <p style="margin-left: 15px; margin-top: -1px; color: red; display: none;" id="error-password">error</p>
+                        </div>
+                        <div class="form-block">
+                            <label class="pull-left" id="select-text">Select a pet type to adopt *</label>
+                            <select class="br-3 select-pet" id="StudyId" onchange="checkCourse()">
+                                <option value="noPet" id=""disabled selected hidden >Select a Pet to adopt.</option>
+                                <option value="pet1">Dogs</option>
+                                <option value="pet2">Cats</option>
+                                <option value="pet3">Birds</option>
+                            </select>
+                            <p style="margin-left: 15px; margin-top: -1px; color: red; display: none;" id="error-course">error</p>
+                        </div>
+                        <div class="form-block text-center">
+                            <button type="button" class="btn-quote br-3 btn-form text-white" onclick="validateForm()"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
+                        </div>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer class="text-center text-white">
+        <marquee behavior="chroll" direction="left">
+            <p>Designed by FombangKen, copyright &copy; 2019. All Rights Reserved</p>
+        </marquee>
+   </footer>
+   <script src="js/jquery.jquery-3.3.1.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>

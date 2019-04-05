@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affortable and proffesional web design">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AdoptPet | Services</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+    <header>
+        <div class="container text-white">
+            <div id="branding">
+                <h1><span class="highlight">Adopt</span>Pet</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="current"><a href="services.html">Services</a></li>
+                    <li class="dropdown">
+                        <a class="dropdownbtn">
+                            <i class="fa fa-user-o user-icon" aria-hidden="true"></i>
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content br-3">
+                            <a href="about.html">Sign Up</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1 class="text-white text-center">Subscribe To Our Newsletter</h1>
+            <form action="">
+                <p style="color: red; display: none; margin-bottom: -7px;" id="subemail-error">error</p>
+                <input type="email" onkeyup="checkSubEmail()" id="sub-email" placeholder="Enter Email..." class="br-3 full-width-sm">
+                <button type="button" class="btn-quote text-white br-3 full-width-sm" onclick="validateSubemail()"><i class="fa fa-paper-plane" aria-hidden="true"></i> Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="main-services">
+        <div class="container">
+            <article id="main-col" class="full-width-sm">
+                <h1 class="main-title">Our Gallery</h1>
+                <div class="row">
+                    <img height="540px" width="99%" style="border: 3px solid grey;" src="assets/images/pic5.jpg" id="mainImage" />
+                    <br>
+                   <div id="myDiv" onclick="changeImage(event)">
+                        <img class="imgStyle" src="assets/images/pic5.jpg"/>
+                        <img class="imgStyle" src="assets/images/pic6.jpg"/>
+                        <img class="imgStyle" src="assets/images/pic7.jpg"/>
+                        <img class="imgStyle" src="assets/images/5.jpg"/>
+                        <img class="imgStyle" src="assets/images/pic10.jpg"/>
+                        <img class="imgStyle" src="assets/images/pic20.jpg"/>      
+                   </div>
+                </div>
+                <ul id="services">
+                    <li class="br-3">
+                        <h3>Dogs Adoption Requirements</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus.
+                        </p>
+                        <p><strong>Adoption fee: $600.</strong></p>
+                    </li>
+                    <li class="br-3">
+                        <h3>Cats Adoption Requirements</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus. 
+                        </p>
+                        <p><strong>Adoption fee: $400.</strong></p>
+                    </li>
+                    <li class="br-3">
+                        <h3>Birds Adoption Requirements</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor suscipit rhoncus.
+                        </p>
+                        <p><strong>Adoption fee: $200.</strong></p>
+                    </li>
+                </ul>
+            </article>
+            <aside id="sidebar" class="full-width-sm">
+                <div class="dark br-3 text-white">
+                    <h3 class="text-center">Get a Quote</h3>
+                    <form action="" class="quote">
+                        <div class="form-block">
+                            <label class="pull-left" id="name-label">Name</label>
+                            <input class="br-3" type="text" onkeyup="checkName()" id="user-name" placeholder="Name">
+                            <p style="margin-left: 15px; margin-top: -1px; color: red; display: none;" id="error-name">error</p>
+                        </div>
+                        <div class="form-block">
+                            <label class="pull-left" id="email-label">Email</label>
+                            <input class="br-3" type="email" onkeyup="checkEmail()" id="user-email" placeholder="Email">
+                            <p style="margin-left: 15px; margin-top: -1px; color: red; display: none;" id="error-email">error</p>
+                        </div>
+                        <div class="form-block">
+                            <label class="pull-left" id="message-label">Message</label>
+                            <textarea class="br-3" onkeyup="checkMessage()" id="user-mssg" rows="5" placeholder="Enter Message(between 100 to 300 characters)"></textarea>
+                            <p style="margin-left: 15px; margin-top: -1px; color: red; display: none;" id="error-message">error</p>
+                        </div>
+                        <div class="form-block text-center">
+                            <button type="button" class="btn-quote br-3 btn-form text-white" onclick="validateQuote()"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
+                        </div>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer class="text-center text-white">
+        <marquee behavior="chroll" direction="left">
+            <p>Designed by FombangKen, copyright &copy; 2019. All Rights Reserved</p>
+        </marquee>
+    </footer>
+    <script src="js/jquery.jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
